@@ -1,0 +1,48 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://github.com/podgostar/verifiable-supply-chain-credential/",
+        "https://gs1.org/voc/"
+    ],
+    "id": "1a57576b-eb09-a09c-a99a-d31f52db0522",
+    "type": [
+        "VerifiableCredential",
+        "BCVerifiableSupplyChainCredential",
+        "AssetDataStandard"
+    ],
+    "issuer": "0xd671ede1de69f77abf778dad82f2a07bdb136790",
+    "holder": "0xd671ede1de69f77abf778dad82f2a07bdb136790",
+    "issuanceDate": "2021-02-16T14:36:53.678Z",
+    "credentialSubject": {
+        "blockchainSupplyChainData": {
+            "id": "a9826734-cbce-5aa0-5f98-605d303a0750",
+            "assetData": {
+                "GS1:functionalName": "Carbon dioxide",
+                "GS1:country": "Spain"
+            },
+            "previousCredential": null,
+            "relatedCredentials": [],
+            "verificationService": {
+                "info": "Ethereum Ropsten Testnet",
+                "endpoint": "getAssetHash(credential_id, asset_id)",
+                "address": "0xeD644b4B7842f260707417CF1b163a8fF6deeA27"
+            }
+        }
+    },
+    "proofs": {
+        "issuerProof": {
+            "type": "EcdsaSecp256k1Signature2019",
+            "created": "2021-02-16T15:00:11.120Z",
+            "proofPurpose": "issue",
+            "verificationMethod": "0xd671ede1de69f77abf778dad82f2a07bdb136790",
+            "jws": "0xe14a3642a780b912b5501da04d83b5a414661223c9eb7c3d30af3f08423123ba5eec5b183e78b654f3381a502a2c3e0b7d0bd7f0c33eb21c7972c8f978f962a81c"
+        },
+        "holderProof": {
+            "type": "EcdsaSecp256k1Signature2019",
+            "created": "2021-02-16T15:00:11.120Z",
+            "proofPurpose": "issue",
+            "verificationMethod": "0xd671ede1de69f77abf778dad82f2a07bdb136790",
+            "jws": "0xe14a3642a780b912b5501da04d83b5a414661223c9eb7c3d30af3f08423123ba5eec5b183e78b654f3381a502a2c3e0b7d0bd7f0c33eb21c7972c8f978f962a81c"
+        }
+    }
+}

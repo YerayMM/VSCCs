@@ -1,0 +1,48 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://github.com/podgostar/verifiable-supply-chain-credential/",
+        "https://gs1.org/voc/"
+    ],
+    "id": "558bc9b1-7cf1-fd4c-eb0b-2aa4fc74b138",
+    "type": [
+        "VerifiableCredential",
+        "BCVerifiableSupplyChainCredential",
+        "AssetDataStandard"
+    ],
+    "issuer": "0x1bb7d2dc077d270a0bebc9d5606585dfb88b4fda",
+    "holder": "0x1bb7d2dc077d270a0bebc9d5606585dfb88b4fda",
+    "issuanceDate": "2021-02-16T14:36:53.678Z",
+    "credentialSubject": {
+        "blockchainSupplyChainData": {
+            "id": "e432d5e1-be20-c42b-cd39-ccd82b6077a6",
+            "assetData": {
+                "GS1:functionalName": "Calcium oxide",
+                "GS1:country": "Spain"
+            },
+            "previousCredential": null,
+            "relatedCredentials": [],
+            "verificationService": {
+                "info": "Ethereum Ropsten Testnet",
+                "endpoint": "getAssetHash(credential_id, asset_id)",
+                "address": "0xeD644b4B7842f260707417CF1b163a8fF6deeA27"
+            }
+        }
+    },
+    "proofs": {
+        "issuerProof": {
+            "type": "EcdsaSecp256k1Signature2019",
+            "created": "2021-02-16T15:17:52.153Z",
+            "proofPurpose": "issue",
+            "verificationMethod": "0x1bb7d2dc077d270a0bebc9d5606585dfb88b4fda",
+            "jws": "0x6b5d739bb482e0c9a571ea7f65f29b7ee41e5e39cff67e23bb6480a5db788a22491676613870db64ef026993cae0619dba17ef43af0720f4213630ddd14d82021b"
+        },
+        "holderProof": {
+            "type": "EcdsaSecp256k1Signature2019",
+            "created": "2021-02-16T15:17:52.153Z",
+            "proofPurpose": "issue",
+            "verificationMethod": "0x1bb7d2dc077d270a0bebc9d5606585dfb88b4fda",
+            "jws": "0x6b5d739bb482e0c9a571ea7f65f29b7ee41e5e39cff67e23bb6480a5db788a22491676613870db64ef026993cae0619dba17ef43af0720f4213630ddd14d82021b"
+        }
+    }
+}

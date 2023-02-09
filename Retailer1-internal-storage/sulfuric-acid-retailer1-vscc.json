@@ -1,0 +1,97 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://github.com/podgostar/verifiable-supply-chain-credential/",
+        "https://gs1.org/voc/"
+    ],
+    "id": "96cb4a6b-4219-6edd-b52a-23b5ca9c222b",
+    "type": [
+        "VerifiableCredential",
+        "BCVerifiableSupplyChainCredential",
+        "AssetDataStandard"
+    ],
+    "issuer": "0xd671ede1de69f77abf778dad82f2a07bdb136790",
+    "holder": "0x98577132b8b98a7c5da0ae49272399cdb19b2adc",
+    "issuanceDate": "2021-02-16T15:48:37.394Z",
+    "credentialSubject": {
+        "blockchainSupplyChainData": {
+            "id": "acd69edd-4b35-90b7-def4-82191ae45057",
+            "assetData": {
+                "GS1:functionalName": "Phenol",
+                "GS1:country": "Spain"
+            },
+            "previousCredential": null,
+            "relatedCredentials": [
+				{
+					"@context": [
+						"https://www.w3.org/2018/credentials/v1",
+						"https://github.com/podgostar/verifiable-supply-chain-credential/",
+						"https://gs1.org/voc/"
+					],
+					"id": "2d7e2da3-692e-b886-4b0c-4f485060f1c4",
+					"type": [
+						"VerifiableCredential",
+						"BCVerifiableSupplyChainCredential",
+						"AssetDataStandard"
+					],
+					"issuer": "0xd671ede1de69f77abf778dad82f2a07bdb136790",
+					"holder": "0xd671ede1de69f77abf778dad82f2a07bdb136790",
+					"issuanceDate": "2021-02-16T14:36:53.678Z",
+					"credentialSubject": {
+						"blockchainSupplyChainData": {
+							"id": "acd69edd-4b35-90b7-def4-82191ae45057",
+							"assetData": {
+								"GS1:functionalName": "Phenol",
+								"GS1:country": "Spain"
+							},
+							"previousCredential": null,
+							"relatedCredentials": [],
+							"verificationService": {
+								"info": "Ethereum Ropsten Testnet",
+								"endpoint": "getAssetHash(credential_id, asset_id)",
+								"address": "0xeD644b4B7842f260707417CF1b163a8fF6deeA27"
+							}
+						}
+					},
+					"proofs": {
+						"issuerProof": {
+							"type": "EcdsaSecp256k1Signature2019",
+							"created": "2021-02-16T14:56:59.197Z",
+							"proofPurpose": "issue",
+							"verificationMethod": "0xd671ede1de69f77abf778dad82f2a07bdb136790",
+							"jws": "0x6b2f478871104d2a6a768130bc301e9860f651ae5ccd6afba37e0769db6788bf60b6d54bd3cadb67e763d1d2f30e610b77a6e841b06cdc4467931fd26101443d1b"
+						},
+						"holderProof": {
+							"type": "EcdsaSecp256k1Signature2019",
+							"created": "2021-02-16T14:56:59.197Z",
+							"proofPurpose": "issue",
+							"verificationMethod": "0xd671ede1de69f77abf778dad82f2a07bdb136790",
+							"jws": "0x6b2f478871104d2a6a768130bc301e9860f651ae5ccd6afba37e0769db6788bf60b6d54bd3cadb67e763d1d2f30e610b77a6e841b06cdc4467931fd26101443d1b"
+						}
+					}
+				}
+			],
+            "verificationService": {
+                "info": "Ethereum Goerli Testnet",
+                "endpoint": "getAssetHash(credential_id, asset_id)",
+                "address": "0x1b6626b19f3AA7867BDb849E57c3C21c78238B96"
+            }
+        }
+    },
+    "proofs": {
+        "issuerProof": {
+            "type": "EcdsaSecp256k1Signature2019",
+            "created": "2021-02-16T16:08:17.451Z",
+            "proofPurpose": "issue",
+            "verificationMethod": "0xd671ede1de69f77abf778dad82f2a07bdb136790",
+            "jws": "0xdea9c903a943293390819214b54883af1d3ebd69c114bc13080490bb613c007c0344de3e347f47cf6fe08fcb2a1cc4636815f925533f60b226f6d4fa2aa6c9321c"
+        },
+        "holderProof": {
+            "type": "EcdsaSecp256k1Signature2019",
+            "created": "2021-02-16T16:08:50.409Z",
+            "proofPurpose": "issue",
+            "verificationMethod": "0x98577132b8b98a7c5da0ae49272399cdb19b2adc",
+            "jws": "0x4a088d8657cca4a7a73607b3b582dff062ad87294f13b7cfafe5ff52f565ce6d0fb71fbf535770dd3db6cdcda8b44a6c72fa5d5e2bddf692ebbc969bdee5b3d61b"
+        }
+    }
+}

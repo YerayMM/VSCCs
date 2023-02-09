@@ -1,0 +1,97 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://github.com/podgostar/verifiable-supply-chain-credential/",
+        "https://gs1.org/voc/"
+    ],
+    "id": "59fefc6a-b077-4cb0-a495-70e070d21bbe",
+    "type": [
+        "VerifiableCredential",
+        "BCVerifiableSupplyChainCredential",
+        "AssetDataStandard"
+    ],
+    "issuer": "0x1bb7d2dc077d270a0bebc9d5606585dfb88b4fda",
+    "holder": "0x98577132b8b98a7c5da0ae49272399cdb19b2adc",
+    "issuanceDate": "2021-02-16T15:21:41.568Z",
+    "credentialSubject": {
+        "blockchainSupplyChainData": {
+            "id": "e432d5e1-be20-c42b-cd39-ccd82b6077a6",
+            "assetData": {
+                "GS1:functionalName": "Calcium oxide",
+                "GS1:country": "Spain"
+            },
+            "previousCredential": null,
+            "relatedCredentials": [
+				{
+					"@context": [
+						"https://www.w3.org/2018/credentials/v1",
+						"https://github.com/podgostar/verifiable-supply-chain-credential/",
+						"https://gs1.org/voc/"
+					],
+					"id": "558bc9b1-7cf1-fd4c-eb0b-2aa4fc74b138",
+					"type": [
+						"VerifiableCredential",
+						"BCVerifiableSupplyChainCredential",
+						"AssetDataStandard"
+					],
+					"issuer": "0x1bb7d2dc077d270a0bebc9d5606585dfb88b4fda",
+					"holder": "0x1bb7d2dc077d270a0bebc9d5606585dfb88b4fda",
+					"issuanceDate": "2021-02-16T14:36:53.678Z",
+					"credentialSubject": {
+						"blockchainSupplyChainData": {
+							"id": "e432d5e1-be20-c42b-cd39-ccd82b6077a6",
+							"assetData": {
+								"GS1:functionalName": "Calcium oxide",
+								"GS1:country": "Spain"
+							},
+							"previousCredential": null,
+							"relatedCredentials": [],
+							"verificationService": {
+								"info": "Ethereum Ropsten Testnet",
+								"endpoint": "getAssetHash(credential_id, asset_id)",
+								"address": "0xeD644b4B7842f260707417CF1b163a8fF6deeA27"
+							}
+						}
+					},
+					"proofs": {
+						"issuerProof": {
+							"type": "EcdsaSecp256k1Signature2019",
+							"created": "2021-02-16T15:17:52.153Z",
+							"proofPurpose": "issue",
+							"verificationMethod": "0x1bb7d2dc077d270a0bebc9d5606585dfb88b4fda",
+							"jws": "0x6b5d739bb482e0c9a571ea7f65f29b7ee41e5e39cff67e23bb6480a5db788a22491676613870db64ef026993cae0619dba17ef43af0720f4213630ddd14d82021b"
+						},
+						"holderProof": {
+							"type": "EcdsaSecp256k1Signature2019",
+							"created": "2021-02-16T15:17:52.153Z",
+							"proofPurpose": "issue",
+							"verificationMethod": "0x1bb7d2dc077d270a0bebc9d5606585dfb88b4fda",
+							"jws": "0x6b5d739bb482e0c9a571ea7f65f29b7ee41e5e39cff67e23bb6480a5db788a22491676613870db64ef026993cae0619dba17ef43af0720f4213630ddd14d82021b"
+						}
+					}
+				}
+			],
+            "verificationService": {
+                "info": "Ethereum Ropsten Testnet",
+                "endpoint": "getAssetHash(credential_id, asset_id)",
+                "address": "0xeD644b4B7842f260707417CF1b163a8fF6deeA27"
+            }
+        }
+    },
+    "proofs": {
+        "issuerProof": {
+            "type": "EcdsaSecp256k1Signature2019",
+            "created": "2021-02-16T15:47:00.777Z",
+            "proofPurpose": "issue",
+            "verificationMethod": "0x1bb7d2dc077d270a0bebc9d5606585dfb88b4fda",
+            "jws": "0x13129fd793f7c8349d24c6e53dc837a81c0de7b1a3673eade94ae6c9e74d24665d3fb700bdd483b076f5ca237e26b1ded679a8c1b57e1b3e4fada2ecd21d9c601b"
+        },
+        "holderProof": {
+            "type": "EcdsaSecp256k1Signature2019",
+            "created": "2021-02-16T15:47:50.037Z",
+            "proofPurpose": "issue",
+            "verificationMethod": "0x98577132b8b98a7c5da0ae49272399cdb19b2adc",
+            "jws": "0x3bd1c058c983cb647f7a2fc91f3cc8ab86a3b32dfa89e37fa90c9369012bf972379327b93701e1ce4fcf983aa0eb7eeeac6178f62beb943c74b4d3492891b73e1c"
+        }
+    }
+}

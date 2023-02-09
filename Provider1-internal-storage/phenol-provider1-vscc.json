@@ -1,0 +1,48 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://github.com/podgostar/verifiable-supply-chain-credential/",
+        "https://gs1.org/voc/"
+    ],
+    "id": "f116cbbe-6a60-0ff3-4e84-17d20ee1e638",
+    "type": [
+        "VerifiableCredential",
+        "BCVerifiableSupplyChainCredential",
+        "AssetDataStandard"
+    ],
+    "issuer": "0xd671ede1de69f77abf778dad82f2a07bdb136790",
+    "holder": "0xd671ede1de69f77abf778dad82f2a07bdb136790",
+    "issuanceDate": "2021-02-16T14:36:53.678Z",
+    "credentialSubject": {
+        "blockchainSupplyChainData": {
+            "id": "c3d26c2f-cf9d-4c89-81f7-7900b91b062a",
+            "assetData": {
+                "GS1:functionalName": "Phenol",
+                "GS1:country": "Spain"
+            },
+            "previousCredential": null,
+            "relatedCredentials": [],
+            "verificationService": {
+                "info": "Ethereum Ropsten Testnet",
+                "endpoint": "getAssetHash(credential_id, asset_id)",
+                "address": "0xeD644b4B7842f260707417CF1b163a8fF6deeA27"
+            }
+        }
+    },
+    "proofs": {
+        "issuerProof": {
+            "type": "EcdsaSecp256k1Signature2019",
+            "created": "2021-02-16T14:40:29.938Z",
+            "proofPurpose": "issue",
+            "verificationMethod": "0xd671ede1de69f77abf778dad82f2a07bdb136790",
+            "jws": "0x8c13ee5a96903b21abdfdffb1e59f29ac25924bf89bd51e1f6e1a83f22fd4d32039671b401ab39736d25872925410e43b8757a609ac4355ad56361437a5585e21c"
+        },
+        "holderProof": {
+            "type": "EcdsaSecp256k1Signature2019",
+            "created": "2021-02-16T14:40:29.938Z",
+            "proofPurpose": "issue",
+            "verificationMethod": "0xd671ede1de69f77abf778dad82f2a07bdb136790",
+            "jws": "0x8c13ee5a96903b21abdfdffb1e59f29ac25924bf89bd51e1f6e1a83f22fd4d32039671b401ab39736d25872925410e43b8757a609ac4355ad56361437a5585e21c"
+        }
+    }
+}
